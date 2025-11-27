@@ -1072,9 +1072,11 @@
   .sustain-badge {
     width: auto;
     min-width: 155px;
+    max-width: 100%;
     padding: 0 20px;
     letter-spacing: 0.22em;
     white-space: nowrap;
+    box-sizing: border-box;
   }
   
   .sustain-grid {
@@ -1410,9 +1412,15 @@
   .about-sustain{ padding: 72px 0; }
   .sustain-badge{
     font-size: 9.5px;
-    width: 120px;
+    width: auto;
+    min-width: 120px;
+    max-width: 100%;
+    padding: 0 16px;
     height: 30px;
     margin-bottom: 18px;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+    box-sizing: border-box;
   }
   .sustain-grid{ grid-template-columns: 1fr; gap: 32px; }
   .sustain-heading{ 
