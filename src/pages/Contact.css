@@ -1,0 +1,687 @@
+.contact-page {
+  padding-top: 0;
+  margin: 0;
+  padding-bottom: 0;
+  overflow: visible;
+  background: #FFFFFF;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contact-banner {
+  width: 100%;
+  padding: 24px 0;
+  margin: 0;
+  margin-top: 100px;
+  background: #FFFFFF;
+}
+
+.contact-banner .container {
+  padding: 0 24px;
+}
+
+.contact-banner .tag {
+  margin: 0 !important;
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #6B7280 !important;
+  padding: 0 14px !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  width: 160px !important;
+  height: 33px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  box-sizing: border-box !important;
+}
+
+.contact-banner .contact-tag-star {
+  color: #000000 !important;
+  font-size: 14px !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+}
+
+.contact-banner .contact-tag-text {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 10px !important;
+  line-height: 21px !important;
+  letter-spacing: 0.27em !important;
+  color: #191D23 !important;
+  text-transform: uppercase !important;
+}
+
+.contact-main {
+  padding: 48px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  background: #FFFFFF;
+}
+
+.contact-heading {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+  margin: 0 0 48px 0;
+  color: #171717;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  margin: 0;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  min-height: 600px;
+  align-items: start;
+}
+
+.contact-info-panel {
+  background: #323790;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 413px;
+  height: 542px;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:first-of-type,
+.contact-item:nth-of-type(2) {
+  cursor: pointer;
+  padding: 12px;
+  margin: -12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:first-of-type:hover,
+.contact-item:nth-of-type(2):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.contact-item:first-of-type.active,
+.contact-item:nth-of-type(2).active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #FFFFFF;
+  padding-left: 16px;
+  margin-left: -12px;
+}
+
+.contact-item h3 {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.contact-item p {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-map-container {
+  position: relative;
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  width: 853px;
+  height: 541px;
+  max-width: 100%;
+  min-height: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.get-directions-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: #323790; /* Blue/900 */
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-weight: 100; /* Regular */
+  font-size: 14px;
+  line-height: 22.5px;
+  letter-spacing: -0.19px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+  z-index: 10;
+}
+
+.get-directions-btn:hover {
+  background: #323790; /* Slightly lighter Blue/800 */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(30, 58, 138, 0.4);
+}
+
+.get-directions-btn:active {
+  transform: translateY(0);
+}
+
+/* Gap between contact section and TellUs section */
+.contact-page .tell-us-section {
+  margin-top: 120px;
+}
+
+/* Contact page is now full screen with no extra spacing */
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+  
+  .contact-info-panel {
+    width: 392px;
+    height: 515px;
+    max-width: 100%;
+    padding: 40px 32px;
+    gap: 32px;
+  }
+  
+  .contact-map-container {
+    width: 810px;
+    height: 514px;
+    max-width: 100%;
+  }
+  
+  .contact-banner {
+    padding: 80px 0 20px;
+  }
+  
+  .contact-banner .tag {
+    width: 160px !important;
+    height: 33px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+  
+  .contact-banner .contact-tag-star {
+    font-size: 13.5px !important;
+    color: #000000 !important;
+  }
+  
+  .contact-banner .contact-tag-text {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 9.5px !important;
+    line-height: 19.95px !important;
+    letter-spacing: 0.27em !important;
+    color: #191D23 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .contact-main {
+    padding: 40px 24px;
+    margin-bottom: 100px;
+  }
+  
+  .contact-heading {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    margin: 0 0 40px 0;
+    color: #171717;
+  }
+  
+  .contact-item h3 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+  
+  .contact-item p {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .contact-content {
+    grid-template-columns: auto 1fr;
+    min-height: 500px;
+    gap: 20px;
+  }
+  
+  .contact-info-panel {
+    width: 372px;
+    height: 488px;
+    max-width: 100%;
+  }
+  
+  .contact-map-container {
+    width: 768px;
+    height: 488px;
+    max-width: 100%;
+  }
+  
+  .contact-page .tell-us-section {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-banner {
+    padding: 80px 0 20px;
+  }
+  
+  .contact-banner .tag {
+    width: 160px !important;
+    height: 33px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+  
+  .contact-banner .contact-tag-star {
+    font-size: 13px !important;
+    color: #000000 !important;
+  }
+  
+  .contact-banner .contact-tag-text {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 9px !important;
+    line-height: 18.9px !important;
+    letter-spacing: 0.27em !important;
+    color: #191D23 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .contact-main {
+    padding: 32px 20px;
+    margin-bottom: 80px;
+  }
+  
+  .contact-heading {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    margin: 0 0 32px 0;
+    color: #171717;
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    min-height: 0;
+    gap: 20px;
+  }
+  
+  .contact-info-panel {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-height: 461px;
+    border-radius: 12px;
+    padding: 32px 24px;
+    gap: 28px;
+  }
+  
+  .contact-map-container {
+    width: 100%;
+    height: 461px;
+    max-width: 100%;
+    min-height: 461px;
+    border-radius: 12px;
+  }
+
+  .contact-item h3 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+
+  .contact-item p {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 461px;
+  }
+  
+  .get-directions-btn {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .contact-page .tell-us-section {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-content {
+    gap: 16px;
+  }
+  
+  .contact-info-panel {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-height: 434px;
+    border-radius: 12px;
+  }
+  
+  .contact-map-container {
+    width: 100%;
+    height: 434px;
+    max-width: 100%;
+    min-height: 434px;
+    border-radius: 12px;
+  }
+  
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 434px;
+  }
+  
+  .contact-banner .tag {
+    width: 160px !important;
+    height: 33px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+  
+  .contact-banner .contact-tag-star {
+    font-size: 12.5px !important;
+    color: #000000 !important;
+  }
+  
+  .contact-banner .contact-tag-text {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 8.5px !important;
+    line-height: 17.85px !important;
+    letter-spacing: 0.27em !important;
+    color: #191D23 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .contact-heading {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    color: #171717;
+  }
+  
+  .contact-item h3 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+  
+  .contact-item p {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content {
+    gap: 16px;
+  }
+  
+  .contact-info-panel {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-height: 379px;
+    border-radius: 12px;
+  }
+  
+  .contact-map-container {
+    width: 100%;
+    height: 379px;
+    max-width: 100%;
+    min-height: 379px;
+    border-radius: 12px;
+  }
+
+  .contact-banner {
+    padding: 70px 0 16px;
+  }
+
+  .contact-banner .tag {
+    width: 160px !important;
+    height: 33px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+
+  .contact-banner .contact-tag-star {
+    font-size: 12px !important;
+    color: #000000 !important;
+  }
+
+  .contact-banner .contact-tag-text {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 8px !important;
+    line-height: 16.8px !important;
+    letter-spacing: 0.27em !important;
+    color: #191D23 !important;
+    text-transform: uppercase !important;
+  }
+
+  .contact-main {
+    padding: 24px 16px;
+    margin-bottom: 64px;
+  }
+
+  .contact-heading {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    margin: 0 0 24px 0;
+    color: #171717;
+  }
+
+  .contact-info-panel {
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .contact-item h3 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+
+  .contact-item p {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 379px;
+  }
+  
+  .get-directions-btn {
+    bottom: 12px;
+    right: 12px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  
+  .contact-page .tell-us-section {
+    margin-top: 64px;
+  }
+  
+  .contact-page > .container.section {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-content {
+    gap: 12px;
+  }
+  
+  .contact-info-panel {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-height: 325px;
+    border-radius: 10px;
+  }
+  
+  .contact-map-container {
+    width: 100%;
+    height: 325px;
+    max-width: 100%;
+    min-height: 325px;
+    border-radius: 10px;
+  }
+  
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 325px;
+  }
+  
+  .contact-banner .tag {
+    width: 160px !important;
+    height: 33px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+  
+  .contact-banner .contact-tag-star {
+    font-size: 11px !important;
+    color: #000000 !important;
+  }
+  
+  .contact-banner .contact-tag-text {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 7.5px !important;
+    line-height: 15.75px !important;
+    letter-spacing: 0.27em !important;
+    color: #191D23 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .contact-heading {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    color: #171717;
+  }
+  
+  .contact-item h3 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+  
+  .contact-item p {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

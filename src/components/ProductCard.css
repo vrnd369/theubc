@@ -1,0 +1,6 @@
+.product{padding:16px;display:grid;grid-template-columns:1fr;gap:12px}
+.product .thumb{background:#F5F6FA;border-radius:16px;display:flex;align-items:center;justify-content:center;min-height:200px}
+.product .thumb img{max-width:90%;height:auto}
+.product-body h3{margin:4px 0}
+.product-body p{color:#6b7280;margin-bottom:8px}
+.btn.ghost{background:#EFF1F5;color:#111827}
