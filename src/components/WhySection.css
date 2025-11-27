@@ -254,16 +254,16 @@
     column-gap: 40px;
   }
   .why-section .why-icon {
-    width: 54px;
-    height: 54px;
+    width: 80px;
+    height: 80px;
     background: transparent;
     box-shadow: none;
     margin-left: 0;
     margin-right: auto;
   }
   .why-section .why-icon img {
-    width: 27px;
-    height: 27px;
+    width: 80px;
+    height: 80px;
   }
   .why-section .why-card h3 {
     font-size: 22px;
@@ -279,10 +279,63 @@
   }
 }
 
+/* Tablet view (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .why-section {
+    padding: 72px 0 56px;
+  }
+  
+  .why-section .container {
+    padding: 0 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .lead.why-subtitle {
+    font-size: clamp(18px, 2vw, 20px);
+  }
+  
+  .why-heading {
+    font-size: clamp(42px, 4.8vw, 48px);
+  }
+  
+  .why-section .why-features {
+    grid-template-columns: 1fr 1fr;
+    column-gap: clamp(32px, 4vw, 40px);
+    row-gap: clamp(36px, 4.5vw, 44px);
+  }
+  
+  .why-section .why-icon {
+    width: clamp(70px, 7.5vw, 80px);
+    height: clamp(70px, 7.5vw, 80px);
+  }
+  
+  .why-section .why-icon img {
+    width: clamp(70px, 7.5vw, 80px);
+    height: clamp(70px, 7.5vw, 80px);
+  }
+  
+  .why-section .why-card h3 {
+    font-size: clamp(20px, 2.2vw, 22px);
+    margin: 0 0 12px 0;
+  }
+  
+  .why-section .why-card p {
+    font-size: clamp(15px, 1.7vw, 16px);
+    max-width: 100%;
+  }
+}
+
 /* Standard mobile breakpoint */
 @media (max-width: 768px) {
   .why-section .why-icon {
+    width: 72px;
+    height: 72px;
     transform: translateX(-5%) !important;
+  }
+  .why-section .why-icon img {
+    width: 72px;
+    height: 72px;
   }
 }
 
@@ -301,8 +354,8 @@
     row-gap: 32px;
   }
   .why-section .why-icon {
-    width: 50px;
-    height: 50px;
+    width: 72px;
+    height: 72px;
     background: transparent;
     box-shadow: none;
     margin-bottom: 16px;
@@ -311,8 +364,8 @@
     transform: translateX(-5%) !important;
   }
   .why-section .why-icon img {
-    width: 25px;
-    height: 25px;
+    width: 72px;
+    height: 72px;
   }
   
   /* Ensure text and icon are properly aligned vertically */

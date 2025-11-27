@@ -47,3 +47,14 @@
 .stats{grid-template-columns:repeat(3,1fr)}
 .stat{padding:18px}
 .stat p{color:#6b7280}
+
+/* Tablet view (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}

@@ -358,6 +358,119 @@
   .category-card-head{ min-height: 200px; }
 }
 
+/* Tablet view (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .categories-section {
+    padding: 68px 0;
+  }
+
+  .categories-section .tag {
+    width: 155px;
+    height: 32px;
+    padding: 0;
+    font-size: 9.5px;
+    line-height: 20px;
+    letter-spacing: 0.4em;
+    margin-bottom: 22px;
+  }
+
+  .categories-section h2 {
+    margin-bottom: 18px;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+  }
+
+  .categories-section h2 .playfair-text {
+    font-size: 38px;
+  }
+
+  .cards {
+    margin-top: 26px;
+  }
+
+  .center {
+    margin-top: 26px;
+  }
+
+  .products-list-section {
+    margin-top: 36px;
+    padding-top: 36px;
+  }
+
+  .products-list-title {
+    font-size: 23px;
+    margin-bottom: 22px;
+  }
+
+  .categories-section .btn {
+    width: 100%;
+    max-width: 1278px;
+    height: 45px;
+    padding: 0;
+    font-size: 13.5px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+
+  .brands-buttons-wrapper {
+    width: 100%;
+    max-width: 1029px;
+    height: auto;
+    min-height: 72px;
+    gap: 8px;
+    padding: 8px;
+    margin-bottom: 14px;
+  }
+
+  .brand-button {
+    height: 56px;
+    padding: 0 17px;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+  }
+
+  .brand-button-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .categories-buttons-wrapper {
+    width: 100%;
+    max-width: 1029px;
+    height: auto;
+    min-height: 72px;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .category-button {
+    height: 56px;
+    padding: 0 17px;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-card-head {
+    min-height: 185px;
+  }
+
+  .category-title {
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+  }
+}
+
 @media (max-width: 1024px){
   .categories-section{ padding: 72px 0; }
   .categories-section .tag{ 

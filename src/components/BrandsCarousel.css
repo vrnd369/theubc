@@ -642,6 +642,149 @@
   }
 }
 
+/* Tablet view (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .brands-carousel-section {
+    padding: 64px 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  
+  .brands-carousel-section .container {
+    padding: 0 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .brands-carousel-header {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+  
+  .brands-carousel-header .brands-carousel-arrows {
+    align-self: flex-end;
+    margin-top: 0;
+  }
+  
+  .brands-carousel-tag {
+    width: 150px;
+    height: 32px;
+    font-size: 9.5px;
+    margin-bottom: 20px;
+  }
+  
+  .brands-carousel-text h2 {
+    font-size: clamp(34px, 3.8vw, 36px);
+    margin-bottom: 14px;
+  }
+  
+  .brands-carousel-text h2 .our-word {
+    font-size: clamp(34px, 3.8vw, 36px);
+  }
+  
+  .brands-carousel-description {
+    font-size: clamp(16px, 1.8vw, 18px);
+  }
+  
+  /* Enable horizontal scrolling for carousel on tablet */
+  .brands-carousel-cards-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px 0 !important;
+    padding: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE and Edge */
+    position: relative !important;
+  }
+  
+  .brands-carousel-cards-wrapper::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, Opera */
+  }
+  
+  .brands-carousel-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    width: max-content !important;
+    min-width: 100% !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    padding-right: 24px !important;
+    padding-left: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  .brand-carousel-card {
+    flex: 0 0 auto !important;
+    width: clamp(420px, 48vw, 550px) !important;
+    min-width: clamp(420px, 48vw, 550px) !important;
+    max-width: clamp(420px, 48vw, 550px) !important;
+    height: auto !important;
+    min-height: clamp(280px, 32vw, 300px) !important;
+    grid-template-columns: clamp(160px, 18vw, 180px) 1fr !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    gap: 16px !important;
+  }
+  
+  .brand-carousel-logo-area {
+    height: 100% !important;
+    align-self: stretch !important;
+  }
+  
+  .brand-carousel-logo {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: clamp(160px, 18vw, 180px) !important;
+    padding: 14px 18px 18px 18px !important;
+  }
+  
+  .brand-carousel-logo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+  
+  .brand-carousel-content {
+    padding: 0 !important;
+    gap: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+  
+  .brand-carousel-content .brand-carousel-tag {
+    font-size: clamp(8.5px, 0.95vw, 9.5px) !important;
+    margin-bottom: 6px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .brand-carousel-content h3 {
+    font-size: clamp(18px, 2vw, 20px) !important;
+    line-height: 1.2 !important;
+    margin: 0 0 8px 0 !important;
+  }
+  
+  .brand-carousel-content p {
+    font-size: clamp(13px, 1.5vw, 14px) !important;
+    line-height: 1.5 !important;
+    margin: 0 0 12px 0 !important;
+  }
+  
+  .brand-carousel-btn {
+    font-size: clamp(12px, 1.4vw, 13px) !important;
+    padding: 8px 18px !important;
+    margin-top: auto !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+  }
+}
+
 @media (max-width: 900px){
   .brands-carousel-cards-wrapper{
     padding-right: 24px;

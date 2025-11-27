@@ -173,6 +173,58 @@
   color: #111827;
 }
 
+/* Tablet view (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .privacy-policy-page {
+    padding: 110px 0 70px;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .tag {
+    font-size: 9.5px;
+    line-height: 20px;
+    height: 32px;
+    padding: 0 13px;
+    margin-bottom: 26px;
+  }
+
+  .privacy-policy-heading {
+    font-size: 40px;
+    margin: 26px 0 14px;
+  }
+
+  .privacy-policy-subtitle {
+    font-size: 15.5px;
+    margin-bottom: 44px;
+  }
+
+  .privacy-section {
+    margin-bottom: 36px;
+  }
+
+  .privacy-section h2 {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 15.5px;
+    line-height: 1.75;
+  }
+
+  .privacy-contact-info {
+    padding: 22px;
+  }
+
+  .privacy-contact-info p {
+    font-size: 15.5px;
+  }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .privacy-policy-page {

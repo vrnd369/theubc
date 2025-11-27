@@ -219,6 +219,85 @@
 
 /* Contact page is now full screen with no extra spacing */
 
+/* Tablet view (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-banner {
+    padding: 90px 0 24px;
+  }
+
+  .contact-banner .tag {
+    width: 160px !important;
+    height: 33px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+
+  .contact-banner .contact-tag-star {
+    font-size: 13px !important;
+  }
+
+  .contact-banner .contact-tag-text {
+    font-size: 9.5px !important;
+    line-height: 19.5px !important;
+  }
+
+  .contact-main {
+    padding: 44px 24px;
+    margin-bottom: 90px;
+  }
+
+  .contact-heading {
+    font-size: 52px;
+    margin: 0 0 44px 0;
+  }
+
+  .contact-content {
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    min-height: 520px;
+  }
+
+  .contact-info-panel {
+    width: 380px;
+    height: 500px;
+    max-width: 100%;
+    padding: 36px 28px;
+    gap: 36px;
+  }
+
+  .contact-item h3 {
+    font-size: 28px;
+  }
+
+  .contact-item p {
+    font-size: 17px;
+  }
+
+  .contact-map-container {
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
+    min-height: 500px;
+  }
+
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+  }
+
+  .get-directions-btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 11px 22px;
+    font-size: 13.5px;
+  }
+
+  .contact-page .tell-us-section {
+    margin-top: 90px;
+  }
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) {
   .contact-content {

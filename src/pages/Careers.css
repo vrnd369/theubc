@@ -418,6 +418,139 @@ html, body { height: 100%; margin: 0; }
 /* ===== Scroll snap with sticky navs ===== */
 .careers section:first-child { scroll-margin-top: 96px; }
 
+/* ===== Tablet Responsive (768px to 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .site-container {
+    padding: 0 24px;
+  }
+
+  .careers-hero {
+    min-height: 85vh;
+    height: 85vh;
+  }
+
+  .careers-hero .site-container {
+    padding-bottom: 6vh;
+    padding-left: 24px;
+  }
+
+  .pill-outline {
+    width: 160px;
+    height: 32px;
+    font-size: 9.5px;
+    line-height: 20px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 16px 0 12px;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .why {
+    padding: 80px 0 56px;
+  }
+
+  .pill-soft {
+    width: 95px;
+    height: 32px;
+    font-size: 9.5px;
+    line-height: 20px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    width: 100%;
+    height: auto;
+    margin: 0 0 40px;
+  }
+
+  .why .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 36px;
+  }
+
+  .why .why-head {
+    font-size: 22px;
+    width: 100%;
+    height: auto;
+  }
+
+  .why .why-text {
+    font-size: 17px;
+    width: 100%;
+    height: auto;
+  }
+
+  .openings {
+    padding: 80px 0;
+  }
+
+  .pill-outline.inverted {
+    width: 120px;
+    height: 32px;
+    font-size: 9.5px;
+    line-height: 20px;
+  }
+
+  .section-title.inverted {
+    font-size: 48px;
+    width: 100%;
+    height: auto;
+  }
+
+  .job-row {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 32px;
+    padding: 28px 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .job-left .job-title {
+    font-size: 22px;
+  }
+
+  .job-date {
+    font-size: 15px;
+  }
+
+  .job-right .job-blurb {
+    font-size: 17px;
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-apply {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .apply-modal-content {
+    padding: 36px;
+    max-width: 700px;
+  }
+
+  .apply-modal-title {
+    font-size: 30px;
+  }
+
+  .apply-modal-description {
+    font-size: 15px;
+  }
+}
+
 /* ===== Mobile Responsive (480px and below) ===== */
 @media (max-width: 480px) {
   .site-container {

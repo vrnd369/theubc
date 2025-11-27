@@ -291,6 +291,48 @@
   }
 }
 
+/* Tablet view (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonials {
+    padding: 64px 0;
+  }
+  
+  .testimonials .container {
+    padding: 0 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-header {
+    margin-bottom: 24px;
+  }
+  
+  .testimonials-heading {
+    font-size: clamp(34px, 3.8vw, 38px);
+  }
+  
+  .testimonials-heading .testimonials-playfair-text {
+    font-size: clamp(34px, 3.8vw, 38px);
+  }
+  
+  .t-grid {
+    grid-template-columns: clamp(420px, 48vw, 480px) clamp(250px, 28vw, 283px) clamp(250px, 28vw, 283px) clamp(250px, 28vw, 283px);
+    gap: clamp(16px, 1.8vw, 20px);
+    justify-content: start;
+    overflow-x: auto;
+  }
+  
+  .t-card-first {
+    width: clamp(420px, 48vw, 480px);
+    height: clamp(230px, 26vw, 257px);
+  }
+  
+  .t-card-second {
+    width: clamp(250px, 28vw, 283px);
+    height: clamp(230px, 26vw, 257px);
+  }
+}
+
 @media (max-width: 900px){
   .testimonials{
     padding: 64px 0;

@@ -253,6 +253,28 @@
   }
 }
 
+/* Tablet view (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tell-us-section {
+    padding: 64px 0;
+  }
+  
+  .tell-us-section .container {
+    padding: 0 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .tell-us-content {
+    gap: clamp(48px, 5.5vw, 56px);
+  }
+  
+  .tell-us-form,
+  .tell-us-submit-btn {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .tell-us-section {
     padding: 64px 0;
